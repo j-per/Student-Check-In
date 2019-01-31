@@ -8,3 +8,17 @@
     padding: 15px 0;
     font-size: 20px;
 }
+
+#table td {
+    padding: 8px;
+    text-align: center;
+}
+
+#table tr:nth-child(even) {
+    background: #CCC;
+}
+
+#table tr:nth-child(odd) {
+    background: #FFF;
+}
+
