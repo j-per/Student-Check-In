@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counseling Check-In</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id='wrapper'>
+      <div id='submission'>
+        <h1 class='heading'>Student Check In</h1>
+        <input id='studentID' type="text" name="studentID" placeholder="Student ID" autocomplete="off" required><br>
+        <select id='customselect' name="counselorName" required>
+          <option id="disabled" value="" disabled="disabled" selected="selected">Counselor</option>
+          <option value="Counselor1">Counselor1</option>
+          <option value="Counselor2">Counselor2</option>
+          <option value="Counselor3">Counselor3</option>
+          <option value="Counselor4">Counselor4</option>
+        </select>
+        <button id="submit" type="submit" value="Submit">Submit</button>
+      </div>
+    </form>
+    <div class="loading">
+       <img src="loader.gif" alt="loading">
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
