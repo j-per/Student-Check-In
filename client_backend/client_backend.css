@@ -1,17 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #table {
     width: 100%;
+    font-family: "Roboto";
+    font-weight: 200;
+    
 }
 
 #table th {
-    background-color: #4CAF50;
+    background-color: #00687F;
     color: white;
     padding: 15px 0;
     font-size: 20px;
+    max-width: 30vw;
 }
 
 #table td {
     padding: 8px;
     text-align: center;
+    border-collapse: collapse;
+    color: black;
 }
 
 #table tr:nth-child(even) {

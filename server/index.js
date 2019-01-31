@@ -2,10 +2,14 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const monk = require('monk');
+const moment = require('moment');
 const db = monk('localhost/studentcheckin');
 const checkins = db.get('checkins');
+const timeFormat = moment().format("L, LTS");
 
+console.log(timeFormat);
 
+console.log();
 app.use(cors());
 app.use(express.json());
 
@@ -30,7 +34,7 @@ const test = app.post('/studentcheckin', (req, res) => {
         const studentIDAndCounselor = {
             studentID: req.body.studentID.toString(),
             counselorName: req.body.counselorName.toString(),
-            created: new Date()
+            created: timeFormat
         };
 
         checkins
